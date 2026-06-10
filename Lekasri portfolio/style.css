@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f5ff;
+    color:#333;
+}
+
+header{
+    text-align:center;
+    color:white;
+    padding:80px 20px;
+    background:linear-gradient(135deg,#5A189A,#9D4EDD);
+}
+
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    margin-bottom:20px;
+    transition:0.4s;
+}
+
+.profile-img:hover{
+    transform:scale(1.05);
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin:10px 0;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    background:white;
+    color:#5A189A;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+nav{
+    background:#240046;
+    text-align:center;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#C77DFF;
+}
+
+section{
+    padding:60px 10%;
+}
+
+h2{
+    color:#7B2CBF;
+    margin-bottom:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin-top:15px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+    gap:15px;
+}
+
+.skill{
+    background:#E0AAFF;
+    padding:15px;
+    text-align:center;
+    border-radius:10px;
+    font-weight:600;
+}
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+footer{
+    background:#240046;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.hidden{
+    opacity:0;
+    transform:translateY(40px);
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+    transition:all 1s ease;
+}
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2rem;
+    }
+
+    nav a{
+        display:block;
+        margin:10px;
+    }
+}
